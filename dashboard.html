@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuantPath </title>
+  <!--Icono de la Pagina-->
+  <link rel="shortcut icon" href="/img/logo.png" type="image/png">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!--Link a CSS-->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+      <img src="img/logo.png" alt="logo" width="34" height="34" class="rounded">
+      QuantPath
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="estrategia.html">Estrategia</a></li>
+        <li class="nav-item"><a class="nav-link active" href="dashboard.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="stocks.html">Stocks</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <a class="btn btn-primary-qp ms-lg-3 mt-3 mt-lg-0" href="contacto.html">
+        Solicitar demo
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ENCABEZADO -->
+<header class="section">
+  <div class="container">
+    <div class="row align-items-center g-3">
+      <div class="col-lg-8">
+        <h1 class="fw-bold">Dashboard</h1>
+        <p class="text-muted-qp mb-0">
+          Panel demostrativo con métricas y resumen financiero (sin datos reales).
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card-qp p-4">
+          <label class="form-label text-muted-qp mb-2">Periodo</label>
+          <select class="form-select">
+            <option selected>Últimos 30 días</option>
+            <option>Últimos 7 días</option>
+            <option>Este mes</option>
+            <option>Este año</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- KPIS -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="row g-3">
+
+      <div class="col-md-3">
+        <div class="card-qp p-4 h-100">
+          <div class="text-muted-qp">Balance</div>
+          <div class="display-6 fw-bold">$48,920</div>
+          <span class="badge bg-success">+2.1%</span>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card-qp p-4 h-100">
+          <div class="text-muted-qp">Ahorro</div>
+          <div class="display-6 fw-bold">$6,300</div>
+          <span class="badge bg-success">+4.8%</span>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card-qp p-4 h-100">
+          <div class="text-muted-qp">Riesgo</div>
+          <div class="display-6 fw-bold">Moderado</div>
+          <span class="badge bg-primary">Perfil</span>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card-qp p-4 h-100">
+          <div class="text-muted-qp">Retorno</div>
+          <div class="display-6 fw-bold">+3.4%</div>
+          <span class="badge bg-success">Mes</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GRAFICA-->
+<section class="section alt-section">
+  <div class="container">
+    <div class="row g-3 align-items-stretch">
+
+      <div class="col-lg-8">
+          <div class="card-qp p-4 text-center">
+            <h6 class="fw-bold mb-3">Distribución financiera</h6>
+            <img src="img/grafica.png" class="img-fluid mx-auto d-block" 
+              alt="Gráfica demo" style="max-width: 80%;">
+            </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card-qp p-4 h-100 justify-content-center">
+          <h5 class="fw-bold">Resumen</h5>
+          <p class="text-muted-qp">
+            Vista rápida del estado financiero basado en métricas simuladas.
+          </p>
+
+          <ul class="text-muted-qp mb-0">
+            <li>Ingresos: $22,500</li>
+            <li>Gastos: $15,200</li>
+            <li>Inversión: $11,400</li>
+            <li>Meta mensual: 80%</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MOVIMIENTOS -->
+<section class="section">
+  <div class="container">
+    <div class="row mb-3">
+      <div class="col-lg-8">
+        <h2 class="fw-bold">Movimientos recientes</h2>
+        <p class="text-muted-qp mb-0">
+          Tabla demostrativa (sin conexión a base de datos).
+        </p>
+      </div>
+    </div>
+
+    <div class="card-qp p-3">
+      <div class="table-responsive">
+        <table class="table table-dark table-borderless align-middle mb-0">
+          <thead>
+            <tr class="text-muted-qp">
+              <th>Fecha</th>
+              <th>Tipo</th>
+              <th>Descripción</th>
+              <th class="text-end">Monto</th>
+              <th class="text-end">Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>26/02/2026</td>
+              <td>Ingreso</td>
+              <td>Depósito</td>
+              <td class="text-end">$4,500</td>
+              <td class="text-end"><span class="badge bg-success">Completado</span></td>
+            </tr>
+            <tr>
+              <td>24/02/2026</td>
+              <td>Gasto</td>
+              <td>Compras</td>
+              <td class="text-end">-$1,250</td>
+              <td class="text-end"><span class="badge bg-success">Completado</span></td>
+            </tr>
+            <tr>
+              <td>22/02/2026</td>
+              <td>Inversión</td>
+              <td>Compra de acción (demo)</td>
+              <td class="text-end">-$900</td>
+              <td class="text-end"><span class="badge bg-warning text-dark">Pendiente</span></td>
+            </tr>
+            <tr>
+              <td>20/02/2026</td>
+              <td>Gasto</td>
+              <td>Servicios</td>
+              <td class="text-end">-$640</td>
+              <td class="text-end"><span class="badge bg-success">Completado</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="card-qp p-4 p-lg-5">
+      <div class="row align-items-center g-3">
+        <div class="col-lg-8">
+          <h3 class="fw-bold mb-1">¿Quieres acceder a la demo completa?</h3>
+          <p class="text-muted-qp mb-0">
+            Déjanos tus datos y te contactamos.
+          </p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a class="btn btn-primary-qp btn-lg w-100 w-lg-auto" href="contacto.html">
+            Solicitar demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Footer-->
+<footer class="text-center py-3 mt-5" style="border-top: 1px solid rgba(255,255,255,.1);">
+  <div class="container">
+    <small class="text-muted-qp">
+      Daniel Saenz Villanueva
+    </small>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuantPath </title>
+  <!--Icono de la Pagina-->
+  <link rel="shortcut icon" href="/img/logo.png" type="image/png">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!--Link a CSS-->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+      <img src="img/logo.png" alt="logo" width="34" height="34" class="rounded">
+      QuantPath
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="estrategia.html">Estrategia</a></li>
+        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="stocks.html">Stocks</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <a class="btn btn-primary-qp ms-lg-3 mt-3 mt-lg-0" href="contacto.html">
+        Solicitar demo
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- CAROUSEL -->
+<header>
+  <div id="carouselQP" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="img/analisis_datos.jpeg" class="d-block w-100 hero-img" alt="hero 1">
+        <div class="carousel-caption text-start">
+          <h1 class="fw-bold">Invierte con más claridad</h1>
+          <p>
+            QuantPath reúne métricas y rendimiento en un panel simple para inversiones personales.
+          </p>
+          <a class="btn btn-primary-qp" href="estrategia.html">Ver estrategia</a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="img/stocks.jpg" class="d-block w-100 hero-img" alt="hero 2">
+        <div class="carousel-caption">
+          <h2 class="fw-bold">Métricas que se entienden</h2>
+          <p>
+            KPIs claros y una vista ordenada. 
+          </p>
+          <a class="btn btn-outline-light" href="dashboard.html">Ver dashboard</a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="img/inversion.png" class="d-block w-100 hero-img" alt="hero 3">
+        <div class="carousel-caption text-end">
+          <h2 class="fw-bold">Herramienta para gestionar tu dinero</h2>
+          <p>
+            Un espacio para tus finanzas y análisis del mercado.
+          </p>
+          <a class="btn btn-outline-light" href="stocks.html">Explorar stocks</a>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselQP" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselQP" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</header>
+
+<!-- MISIÓN-->
+<section class="section">
+  <div class="container">
+    <div class="row align-items-end mb-3">
+      <div class="col-lg-8">
+        <h2 class="fw-bold">Nuestra misión</h2>
+        <p class="text-muted-qp mb-0">
+          Ayudar a personas que desean inviertir a entender su desempeño de forma simple:
+          métricas claras, visualización ordenada y decisiones con más confianza.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-3 mt-1">
+      <div class="col-md-4">
+        <div class="card-qp p-4 h-100">
+          <h5 class="fw-bold">Visibilidad</h5>
+          <p class="text-muted-qp mb-0">
+            Un panel para ver lo importante sin perderte en números.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-qp p-4 h-100">
+          <h5 class="fw-bold">Orden</h5>
+          <p class="text-muted-qp mb-0">
+            Secciones y métricas pensadas para una experiencia limpia.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-qp p-4 h-100">
+          <h5 class="fw-bold">Finanzas personales</h5>
+          <p class="text-muted-qp mb-0">
+            Un espacio para poder llevar una mejor planeación personal.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PARA QUIÉN ES -->
+<section class="section alt-section">
+  <div class="container">
+    <div class="row g-3 align-items-center">
+      <div class="col-lg-6">
+        <h2 class="fw-bold">¿Para quién es QuantPath?</h2>
+        <p class="text-muted-qp">
+          Para peronas que se desean convertir inversionistas personales y que quieren llevar un mejor control de sus finanzas.
+        </p>
+
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <div class="card-qp p-4 h-100">
+              <h6 class="fw-bold mb-1">Principiantes</h6>
+              <p class="text-muted-qp mb-0">Una forma simple de entender resultados.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card-qp p-4 h-100">
+              <h6 class="fw-bold mb-1">Organizados</h6>
+              <p class="text-muted-qp mb-0">Todo lo que debes saber en un solo lugar.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card-qp p-4 h-100">
+              <h6 class="fw-bold mb-1">Innovadores</h6>
+              <p class="text-muted-qp mb-0">Exploración estrategias y resultados.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card-qp p-4 h-100">
+              <h6 class="fw-bold mb-1">En crecimiento</h6>
+              <p class="text-muted-qp mb-0">Buscan una plataforma que adecue a sus necesidades.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card-qp p-3">
+          <img src="img/inv_personal.jpg" class="img-fluid rounded" alt="app">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section">
+  <div class="row g-3">
+  <!-- Card 1 -->
+  <div class="col-md-4">
+    <div class="card-qp h-100 overflow-hidden">
+      <img src="img/kpi.png" class="w-100 feature-img" alt="KPIs">
+      <div class="p-4">
+        <h5 class="fw-bold">KPIs clave</h5>
+        <p class="text-muted-qp mb-0">Retorno, riesgo y métricas claras.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="col-md-4">
+    <div class="card-qp h-100 overflow-hidden">
+      <img src="img/mercado.avif" class="w-100 feature-img" alt="Mercado">
+      <div class="p-4">
+        <h5 class="fw-bold">Visualización del mercado</h5>
+        <p class="text-muted-qp mb-0">Disponibilidad de insights en la bolsa.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="col-md-4">
+    <div class="card-qp h-100 overflow-hidden">
+      <img src="img/finanzas-personales.jpeg" class="w-100 feature-img" alt="Finanzas Personales">
+      <div class="p-4">
+        <h5 class="fw-bold">Finanzas Personales</h5>
+        <p class="text-muted-qp mb-0">Visualización de finanzas personales.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Contacto -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="card-qp p-4 p-lg-5">
+      <div class="row align-items-center g-3">
+        <div class="col-lg-8">
+          <h3 class="fw-bold mb-1">Ponte en contacto con nosotros.</h3>
+          <p class="text-muted-qp mb-0">
+            Déjanos tus datos y te contactamos para mostrarte el producto.
+          </p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a class="btn btn-primary-qp btn-lg w-100 w-lg-auto" href="contacto.html">
+            Solicitar demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Footer-->
+  <footer class="text-center py-3 mt-5" style="border-top: 1px solid rgba(255,255,255,.1);">
+    <div class="container">
+        <small class="text-muted-qp">
+        Daniel Saenz Villanueva
+        </small>
+        </div>
+    </footer>
+</body>
+</html>
