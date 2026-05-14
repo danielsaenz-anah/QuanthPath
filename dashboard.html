@@ -148,9 +148,6 @@
     <div class="row mb-3">
       <div class="col-lg-8">
         <h2 class="fw-bold">Movimientos recientes</h2>
-        <p class="text-muted-qp mb-0">
-          Tabla demostrativa (sin conexión a base de datos).
-        </p>
       </div>
     </div>
 
@@ -166,34 +163,11 @@
               <th class="text-end">Estado</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="movimientosBody">
             <tr>
-              <td>26/02/2026</td>
-              <td>Ingreso</td>
-              <td>Depósito</td>
-              <td class="text-end">$4,500</td>
-              <td class="text-end"><span class="badge bg-success">Completado</span></td>
-            </tr>
-            <tr>
-              <td>24/02/2026</td>
-              <td>Gasto</td>
-              <td>Compras</td>
-              <td class="text-end">-$1,250</td>
-              <td class="text-end"><span class="badge bg-success">Completado</span></td>
-            </tr>
-            <tr>
-              <td>22/02/2026</td>
-              <td>Inversión</td>
-              <td>Compra de acción (demo)</td>
-              <td class="text-end">-$900</td>
-              <td class="text-end"><span class="badge bg-warning text-dark">Pendiente</span></td>
-            </tr>
-            <tr>
-              <td>20/02/2026</td>
-              <td>Gasto</td>
-              <td>Servicios</td>
-              <td class="text-end">-$640</td>
-              <td class="text-end"><span class="badge bg-success">Completado</span></td>
+              <td colspan="5" class="text-center text-muted-qp">
+                 Cargando movimientos...
+              </td>
             </tr>
           </tbody>
         </table>
@@ -232,6 +206,9 @@
     </small>
   </div>
 </footer>
+
+<!-- JS Dashboard -->
+<script src="js/dashboard.js"></script>
 
 </body>
 </html>

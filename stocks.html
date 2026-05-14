@@ -61,7 +61,7 @@
         <div class="card-qp p-4">
           <form>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Buscar acción (ej. AAPL, TSLA, GOOGL)">
+              <input type="text" id="buscarStock" class="form-control" placeholder="Buscar acción (ej. AAPL, TSLA, GOOGL)">
               <button class="btn btn-primary-qp" type="button">
                 Buscar
               </button>
@@ -81,44 +81,15 @@
     <div class="row mb-3">
       <div class="col-lg-8">
         <h2 class="fw-bold">Resultados del mercado</h2>
-        <p class="text-muted-qp mb-0">
-          Vista simulada de información financiera.
-        </p>
       </div>
     </div>
 
-    <div class="row g-3">
-
-      <!-- Card 1 -->
-      <div class="col-md-4">
-        <div class="card-qp p-4 h-100">
-          <h5 class="fw-bold">AAPL</h5>
-          <p class="text-muted-qp mb-1">Apple Inc.</p>
-          <div class="display-6 fw-bold">$189.45</div>
-          <span class="badge bg-success">+1.25%</span>
-        </div>
+    <div class="row g-3" id="stocksContainer">
+      <div class="col-12">
+         <div class="card-qp p-4 text-center">
+            <p class="text-muted-qp mb-0">Cargando stocks...</p>
+          </div>
       </div>
-
-      <!-- Card 2 -->
-      <div class="col-md-4">
-        <div class="card-qp p-4 h-100">
-          <h5 class="fw-bold">TSLA</h5>
-          <p class="text-muted-qp mb-1">Tesla Inc.</p>
-          <div class="display-6 fw-bold">$245.30</div>
-          <span class="badge bg-danger">-0.84%</span>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-md-4">
-        <div class="card-qp p-4 h-100">
-          <h5 class="fw-bold">GOOGL</h5>
-          <p class="text-muted-qp mb-1">Alphabet Inc.</p>
-          <div class="display-6 fw-bold">$131.12</div>
-          <span class="badge bg-success">+0.67%</span>
-        </div>
-      </div>
-
     </div>
 
   </div>
@@ -132,6 +103,9 @@
     </small>
   </div>
 </footer>
+
+<!-- JS Stocks -->
+<script src="js/stocks.js"></script>
 
 </body>
 </html>

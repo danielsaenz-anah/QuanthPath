@@ -61,43 +61,46 @@
         <div class="card-qp p-4 p-lg-5">
           <h3 class="fw-bold mb-4 text-center">Solicitar demo</h3>
 
-          <form>
-            <!-- Nombre -->
-            <div class="mb-3">
-              <label class="form-label text-muted-qp">Nombre</label>
-              <input type="text" class="form-control" placeholder="Tu nombre" required>
-            </div>
+          <form id="formContacto">
+  <!-- Nombre -->
+  <div class="mb-3">
+    <label class="form-label text-muted-qp">Nombre</label>
+    <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" required>
+  </div>
 
-            <!-- Correo -->
-            <div class="mb-3">
-              <label class="form-label text-muted-qp">Correo</label>
-              <input type="email" class="form-control" placeholder="ejemplo@correo.com" required>
-            </div>
+  <!-- Correo -->
+  <div class="mb-3">
+    <label class="form-label text-muted-qp">Correo</label>
+    <input type="email" id="correo" class="form-control" placeholder="ejemplo@correo.com" required>
+  </div>
 
-            <!-- Tipo de usuario -->
-            <div class="mb-3">
-              <label class="form-label text-muted-qp">Tipo de usuario</label>
-              <select class="form-select" required>
-                <option value="" selected disabled>Selecciona una opción</option>
-                <option>Principiante</option>
-                <option>Inversionista personal</option>
-                <option>Inversionista profesional</option>
-                <option>Otro</option>
-              </select>
-            </div>
+  <!-- Tipo de usuario -->
+  <div class="mb-3">
+    <label class="form-label text-muted-qp">Tipo de usuario</label>
+    <select id="tipoUsuario" class="form-select" required>
+      <option value="" selected disabled>Selecciona una opción</option>
+      <option>Principiante</option>
+      <option>Inversionista personal</option>
+      <option>Curioso del mercado</option>
+      <option>Otro</option>
+    </select>
+  </div>
 
-            <!-- Mensaje -->
-            <div class="mb-4">
-              <label class="form-label text-muted-qp">Mensaje</label>
-              <textarea class="form-control" rows="4" placeholder="Cuéntanos qué buscas..." required></textarea>
-            </div>
+  <!-- Mensaje -->
+  <div class="mb-4">
+    <label class="form-label text-muted-qp">Mensaje</label>
+    <textarea id="mensaje" class="form-control" rows="4" placeholder="Cuéntanos qué buscas..." required></textarea>
+  </div>
 
-            <!-- Botón -->
-            <button type="submit" class="btn btn-primary-qp w-100 btn-lg">
-              Enviar
-            </button>
+  <!-- Botón -->
+  <button type="submit" class="btn btn-primary-qp w-100 btn-lg">
+    Enviar
+  </button>
 
-          </form>
+  <p class="text-muted-qp small mt-3 mb-0 text-center">
+    * La información será enviada al backend de QuantPath.
+  </p>
+</form>
 
         </div>
       </div>
@@ -114,6 +117,9 @@
     </small>
   </div>
 </footer>
+
+<!-- JS Contacto -->
+<script src="js/contacto.js"></script>
 
 </body>
 </html>
